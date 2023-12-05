@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    /* Ensure the container is large enough to enable scrolling */
+}
+
+.image-column {
+    width: 30%; /* Adjust width as needed */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 100px; /* Corrected with unit */
+    z-index: 10; /* Optional, ensures it stays on top */
+    /* Additional styling */
+}
+
+.video-container {
+    flex-grow: 1; /* Adjusts the size to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 100px;
+}
+
+.video {
+    width: 40%; /* Adjust as needed */
+    max-height: auto; /* Adjust as needed */
+}
